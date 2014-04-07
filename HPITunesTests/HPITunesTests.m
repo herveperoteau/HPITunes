@@ -2,22 +2,31 @@
 //  HPITunesTests.m
 //  HPITunesTests
 //
-//  Created by Hervé PEROTEAU on 07/04/2014.
+//  Created by Hervé PEROTEAU on 29/03/2014.
 //  Copyright (c) 2014 Hervé PEROTEAU. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+#import "HPITunesManager.h"
 
 @interface HPITunesTests : XCTestCase
 
 @end
 
-@implementation HPITunesTests
+@implementation HPITunesTests {
+    
+    dispatch_semaphore_t semaphore;
+    HPITunesManager *itunesManager;
+}
 
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    semaphore = dispatch_semaphore_create(0);
+    
+    itunesManager = [HPITunesManager sharedInstance];
+    itunesManager.countryCode = @"fr";
 }
 
 - (void)tearDown
@@ -26,9 +35,48 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+-(void) testGetAlbumsMuse {
+    
+    [self getAlbumsArtist:@"muse"];
 }
+
+-(void) testGetAlbumsRihanna {
+    
+    [self getAlbumsArtist:@"Rihanna"];
+}
+
+- (void)getAlbumsArtist:(NSString *)artist {
+    
+    __block NSError *err;
+    
+    [itunesManager getAlbumsArtist:artist
+                    Completion:^(id object, NSArray *array, NSError *error) {
+                        
+                        if (error) {
+                            err = error;
+                        }
+                        else {
+                            NSLog(@"ArtistID=%@", object);
+                            
+                            [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                                
+                                NSLog(@"Album:\n%@", obj);
+                            }];
+                        }
+                            
+                        dispatch_semaphore_signal(semaphore);
+                    }];
+    
+    NSLog(@"wait ...");
+    while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW))
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+                                 beforeDate:[NSDate dateWithTimeIntervalSinceNow:20]];
+    NSLog(@"wait OK");
+    
+    XCTAssertTrue(err==nil, @"error: %@", [err localizedDescription]);
+}
+
+
+
 
 @end
