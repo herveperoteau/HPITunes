@@ -7,138 +7,149 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09C451F618F292F300E4710B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F518F292F300E4710B /* Foundation.framework */; };
-		09C451FB18F292F300E4710B /* HPITunes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09C451FA18F292F300E4710B /* HPITunes.h */; };
-		09C451FD18F292F300E4710B /* HPITunes.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C451FC18F292F300E4710B /* HPITunes.m */; };
-		09C4520418F292F300E4710B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C4520318F292F300E4710B /* XCTest.framework */; };
-		09C4520518F292F300E4710B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F518F292F300E4710B /* Foundation.framework */; };
-		09C4520718F292F300E4710B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C4520618F292F300E4710B /* UIKit.framework */; };
-		09C4520A18F292F300E4710B /* libHPITunes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F218F292F300E4710B /* libHPITunes.a */; };
-		09C4521018F292F300E4710B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09C4520E18F292F300E4710B /* InfoPlist.strings */; };
-		09C4521218F292F300E4710B /* HPITunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C4521118F292F300E4710B /* HPITunesTests.m */; };
+		09C60E9418E766BC0079BC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C60E9318E766BC0079BC8E /* Foundation.framework */; };
+		09C60E9918E766BC0079BC8E /* HPITunesManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09C60E9818E766BC0079BC8E /* HPITunesManager.h */; };
+		09C60E9B18E766BC0079BC8E /* HPITunesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C60E9A18E766BC0079BC8E /* HPITunesManager.m */; };
+		09C60EA218E766BC0079BC8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C60EA118E766BC0079BC8E /* XCTest.framework */; };
+		09C60EA318E766BC0079BC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C60E9318E766BC0079BC8E /* Foundation.framework */; };
+		09C60EA518E766BC0079BC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C60EA418E766BC0079BC8E /* UIKit.framework */; };
+		09C60EA818E766BC0079BC8E /* libHPITunes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C60E9018E766BC0079BC8E /* libHPITunes.a */; };
+		09C60EAE18E766BC0079BC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09C60EAC18E766BC0079BC8E /* InfoPlist.strings */; };
+		09C60EB018E766BC0079BC8E /* HPITunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C60EAF18E766BC0079BC8E /* HPITunesTests.m */; };
+		09C60EBB18E76AE20079BC8E /* HPITunesAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C60EBA18E76AE20079BC8E /* HPITunesAlbum.m */; };
+		0EF07CF0C5F14A46AB8B5A5F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A20D3ACEEF3341EAB0EC354E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09C4520818F292F300E4710B /* PBXContainerItemProxy */ = {
+		09C60EA618E766BC0079BC8E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 09C451EA18F292F300E4710B /* Project object */;
+			containerPortal = 09C60E8818E766BC0079BC8E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 09C451F118F292F300E4710B;
+			remoteGlobalIDString = 09C60E8F18E766BC0079BC8E;
 			remoteInfo = HPITunes;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		09C451F018F292F300E4710B /* CopyFiles */ = {
+		09C60E8E18E766BC0079BC8E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				09C451FB18F292F300E4710B /* HPITunes.h in CopyFiles */,
+				09C60E9918E766BC0079BC8E /* HPITunesManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09C451F218F292F300E4710B /* libHPITunes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPITunes.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C451F518F292F300E4710B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		09C451F918F292F300E4710B /* HPITunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPITunes-Prefix.pch"; sourceTree = "<group>"; };
-		09C451FA18F292F300E4710B /* HPITunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPITunes.h; sourceTree = "<group>"; };
-		09C451FC18F292F300E4710B /* HPITunes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunes.m; sourceTree = "<group>"; };
-		09C4520218F292F300E4710B /* HPITunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPITunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09C4520318F292F300E4710B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		09C4520618F292F300E4710B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		09C4520D18F292F300E4710B /* HPITunesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPITunesTests-Info.plist"; sourceTree = "<group>"; };
-		09C4520F18F292F300E4710B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09C4521118F292F300E4710B /* HPITunesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunesTests.m; sourceTree = "<group>"; };
+		09C60E9018E766BC0079BC8E /* libHPITunes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPITunes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C60E9318E766BC0079BC8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09C60E9718E766BC0079BC8E /* HPITunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPITunes-Prefix.pch"; sourceTree = "<group>"; };
+		09C60E9818E766BC0079BC8E /* HPITunesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPITunesManager.h; sourceTree = "<group>"; };
+		09C60E9A18E766BC0079BC8E /* HPITunesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunesManager.m; sourceTree = "<group>"; };
+		09C60EA018E766BC0079BC8E /* HPITunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPITunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C60EA118E766BC0079BC8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		09C60EA418E766BC0079BC8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		09C60EAB18E766BC0079BC8E /* HPITunesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPITunesTests-Info.plist"; sourceTree = "<group>"; };
+		09C60EAD18E766BC0079BC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09C60EAF18E766BC0079BC8E /* HPITunesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunesTests.m; sourceTree = "<group>"; };
+		09C60EB918E76AE20079BC8E /* HPITunesAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPITunesAlbum.h; sourceTree = "<group>"; };
+		09C60EBA18E76AE20079BC8E /* HPITunesAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPITunesAlbum.m; sourceTree = "<group>"; };
+		A20D3ACEEF3341EAB0EC354E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC1845A684C4A7884459078 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09C451EF18F292F300E4710B /* Frameworks */ = {
+		09C60E8D18E766BC0079BC8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C451F618F292F300E4710B /* Foundation.framework in Frameworks */,
+				09C60E9418E766BC0079BC8E /* Foundation.framework in Frameworks */,
+				0EF07CF0C5F14A46AB8B5A5F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09C451FF18F292F300E4710B /* Frameworks */ = {
+		09C60E9D18E766BC0079BC8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C4520418F292F300E4710B /* XCTest.framework in Frameworks */,
-				09C4520718F292F300E4710B /* UIKit.framework in Frameworks */,
-				09C4520518F292F300E4710B /* Foundation.framework in Frameworks */,
-				09C4520A18F292F300E4710B /* libHPITunes.a in Frameworks */,
+				09C60EA218E766BC0079BC8E /* XCTest.framework in Frameworks */,
+				09C60EA518E766BC0079BC8E /* UIKit.framework in Frameworks */,
+				09C60EA318E766BC0079BC8E /* Foundation.framework in Frameworks */,
+				09C60EA818E766BC0079BC8E /* libHPITunes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09C451E918F292F300E4710B = {
+		09C60E8718E766BC0079BC8E = {
 			isa = PBXGroup;
 			children = (
-				09C451F718F292F300E4710B /* HPITunes */,
-				09C4520B18F292F300E4710B /* HPITunesTests */,
-				09C451F418F292F300E4710B /* Frameworks */,
-				09C451F318F292F300E4710B /* Products */,
+				09C60E9518E766BC0079BC8E /* HPITunes */,
+				09C60EA918E766BC0079BC8E /* HPITunesTests */,
+				09C60E9218E766BC0079BC8E /* Frameworks */,
+				09C60E9118E766BC0079BC8E /* Products */,
+				FFC1845A684C4A7884459078 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
-		09C451F318F292F300E4710B /* Products */ = {
+		09C60E9118E766BC0079BC8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09C451F218F292F300E4710B /* libHPITunes.a */,
-				09C4520218F292F300E4710B /* HPITunesTests.xctest */,
+				09C60E9018E766BC0079BC8E /* libHPITunes.a */,
+				09C60EA018E766BC0079BC8E /* HPITunesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		09C451F418F292F300E4710B /* Frameworks */ = {
+		09C60E9218E766BC0079BC8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09C451F518F292F300E4710B /* Foundation.framework */,
-				09C4520318F292F300E4710B /* XCTest.framework */,
-				09C4520618F292F300E4710B /* UIKit.framework */,
+				09C60E9318E766BC0079BC8E /* Foundation.framework */,
+				09C60EA118E766BC0079BC8E /* XCTest.framework */,
+				09C60EA418E766BC0079BC8E /* UIKit.framework */,
+				A20D3ACEEF3341EAB0EC354E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		09C451F718F292F300E4710B /* HPITunes */ = {
+		09C60E9518E766BC0079BC8E /* HPITunes */ = {
 			isa = PBXGroup;
 			children = (
-				09C451FA18F292F300E4710B /* HPITunes.h */,
-				09C451FC18F292F300E4710B /* HPITunes.m */,
-				09C451F818F292F300E4710B /* Supporting Files */,
+				09C60EB918E76AE20079BC8E /* HPITunesAlbum.h */,
+				09C60EBA18E76AE20079BC8E /* HPITunesAlbum.m */,
+				09C60E9818E766BC0079BC8E /* HPITunesManager.h */,
+				09C60E9A18E766BC0079BC8E /* HPITunesManager.m */,
+				09C60E9618E766BC0079BC8E /* Supporting Files */,
 			);
 			path = HPITunes;
 			sourceTree = "<group>";
 		};
-		09C451F818F292F300E4710B /* Supporting Files */ = {
+		09C60E9618E766BC0079BC8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				09C451F918F292F300E4710B /* HPITunes-Prefix.pch */,
+				09C60E9718E766BC0079BC8E /* HPITunes-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		09C4520B18F292F300E4710B /* HPITunesTests */ = {
+		09C60EA918E766BC0079BC8E /* HPITunesTests */ = {
 			isa = PBXGroup;
 			children = (
-				09C4521118F292F300E4710B /* HPITunesTests.m */,
-				09C4520C18F292F300E4710B /* Supporting Files */,
+				09C60EAF18E766BC0079BC8E /* HPITunesTests.m */,
+				09C60EAA18E766BC0079BC8E /* Supporting Files */,
 			);
 			path = HPITunesTests;
 			sourceTree = "<group>";
 		};
-		09C4520C18F292F300E4710B /* Supporting Files */ = {
+		09C60EAA18E766BC0079BC8E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				09C4520D18F292F300E4710B /* HPITunesTests-Info.plist */,
-				09C4520E18F292F300E4710B /* InfoPlist.strings */,
+				09C60EAB18E766BC0079BC8E /* HPITunesTests-Info.plist */,
+				09C60EAC18E766BC0079BC8E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,13 +157,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		09C451F118F292F300E4710B /* HPITunes */ = {
+		09C60E8F18E766BC0079BC8E /* HPITunes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09C4521518F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunes" */;
+			buildConfigurationList = 09C60EB318E766BC0079BC8E /* Build configuration list for PBXNativeTarget "HPITunes" */;
 			buildPhases = (
-				09C451EE18F292F300E4710B /* Sources */,
-				09C451EF18F292F300E4710B /* Frameworks */,
-				09C451F018F292F300E4710B /* CopyFiles */,
+				D80255FB57A74A06A00AB0B7 /* Check Pods Manifest.lock */,
+				09C60E8C18E766BC0079BC8E /* Sources */,
+				09C60E8D18E766BC0079BC8E /* Frameworks */,
+				09C60E8E18E766BC0079BC8E /* CopyFiles */,
+				5A54DD5CBBC24DC1A1DEA0D4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,97 +173,131 @@
 			);
 			name = HPITunes;
 			productName = HPITunes;
-			productReference = 09C451F218F292F300E4710B /* libHPITunes.a */;
+			productReference = 09C60E9018E766BC0079BC8E /* libHPITunes.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		09C4520118F292F300E4710B /* HPITunesTests */ = {
+		09C60E9F18E766BC0079BC8E /* HPITunesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09C4521818F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunesTests" */;
+			buildConfigurationList = 09C60EB618E766BC0079BC8E /* Build configuration list for PBXNativeTarget "HPITunesTests" */;
 			buildPhases = (
-				09C451FE18F292F300E4710B /* Sources */,
-				09C451FF18F292F300E4710B /* Frameworks */,
-				09C4520018F292F300E4710B /* Resources */,
+				09C60E9C18E766BC0079BC8E /* Sources */,
+				09C60E9D18E766BC0079BC8E /* Frameworks */,
+				09C60E9E18E766BC0079BC8E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				09C4520918F292F300E4710B /* PBXTargetDependency */,
+				09C60EA718E766BC0079BC8E /* PBXTargetDependency */,
 			);
 			name = HPITunesTests;
 			productName = HPITunesTests;
-			productReference = 09C4520218F292F300E4710B /* HPITunesTests.xctest */;
+			productReference = 09C60EA018E766BC0079BC8E /* HPITunesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		09C451EA18F292F300E4710B /* Project object */ = {
+		09C60E8818E766BC0079BC8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Hervé PEROTEAU";
 			};
-			buildConfigurationList = 09C451ED18F292F300E4710B /* Build configuration list for PBXProject "HPITunes" */;
+			buildConfigurationList = 09C60E8B18E766BC0079BC8E /* Build configuration list for PBXProject "HPITunes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 09C451E918F292F300E4710B;
-			productRefGroup = 09C451F318F292F300E4710B /* Products */;
+			mainGroup = 09C60E8718E766BC0079BC8E;
+			productRefGroup = 09C60E9118E766BC0079BC8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				09C451F118F292F300E4710B /* HPITunes */,
-				09C4520118F292F300E4710B /* HPITunesTests */,
+				09C60E8F18E766BC0079BC8E /* HPITunes */,
+				09C60E9F18E766BC0079BC8E /* HPITunesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		09C4520018F292F300E4710B /* Resources */ = {
+		09C60E9E18E766BC0079BC8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C4521018F292F300E4710B /* InfoPlist.strings in Resources */,
+				09C60EAE18E766BC0079BC8E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A54DD5CBBC24DC1A1DEA0D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80255FB57A74A06A00AB0B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		09C451EE18F292F300E4710B /* Sources */ = {
+		09C60E8C18E766BC0079BC8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C451FD18F292F300E4710B /* HPITunes.m in Sources */,
+				09C60E9B18E766BC0079BC8E /* HPITunesManager.m in Sources */,
+				09C60EBB18E76AE20079BC8E /* HPITunesAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09C451FE18F292F300E4710B /* Sources */ = {
+		09C60E9C18E766BC0079BC8E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C4521218F292F300E4710B /* HPITunesTests.m in Sources */,
+				09C60EB018E766BC0079BC8E /* HPITunesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09C4520918F292F300E4710B /* PBXTargetDependency */ = {
+		09C60EA718E766BC0079BC8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 09C451F118F292F300E4710B /* HPITunes */;
-			targetProxy = 09C4520818F292F300E4710B /* PBXContainerItemProxy */;
+			target = 09C60E8F18E766BC0079BC8E /* HPITunes */;
+			targetProxy = 09C60EA618E766BC0079BC8E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		09C4520E18F292F300E4710B /* InfoPlist.strings */ = {
+		09C60EAC18E766BC0079BC8E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				09C4520F18F292F300E4710B /* en */,
+				09C60EAD18E766BC0079BC8E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -258,7 +305,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		09C4521318F292F300E4710B /* Debug */ = {
+		09C60EB118E766BC0079BC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,7 +342,7 @@
 			};
 			name = Debug;
 		};
-		09C4521418F292F300E4710B /* Release */ = {
+		09C60EB218E766BC0079BC8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,8 +373,9 @@
 			};
 			name = Release;
 		};
-		09C4521618F292F300E4710B /* Debug */ = {
+		09C60EB418E766BC0079BC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC1845A684C4A7884459078 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/HPITunes.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -338,8 +386,9 @@
 			};
 			name = Debug;
 		};
-		09C4521718F292F300E4710B /* Release */ = {
+		09C60EB518E766BC0079BC8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC1845A684C4A7884459078 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/HPITunes.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -350,7 +399,7 @@
 			};
 			name = Release;
 		};
-		09C4521918F292F300E4710B /* Debug */ = {
+		09C60EB718E766BC0079BC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -370,7 +419,7 @@
 			};
 			name = Debug;
 		};
-		09C4521A18F292F300E4710B /* Release */ = {
+		09C60EB818E766BC0079BC8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -389,32 +438,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09C451ED18F292F300E4710B /* Build configuration list for PBXProject "HPITunes" */ = {
+		09C60E8B18E766BC0079BC8E /* Build configuration list for PBXProject "HPITunes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09C4521318F292F300E4710B /* Debug */,
-				09C4521418F292F300E4710B /* Release */,
+				09C60EB118E766BC0079BC8E /* Debug */,
+				09C60EB218E766BC0079BC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09C4521518F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunes" */ = {
+		09C60EB318E766BC0079BC8E /* Build configuration list for PBXNativeTarget "HPITunes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09C4521618F292F300E4710B /* Debug */,
-				09C4521718F292F300E4710B /* Release */,
+				09C60EB418E766BC0079BC8E /* Debug */,
+				09C60EB518E766BC0079BC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		09C4521818F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunesTests" */ = {
+		09C60EB618E766BC0079BC8E /* Build configuration list for PBXNativeTarget "HPITunesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09C4521918F292F300E4710B /* Debug */,
-				09C4521A18F292F300E4710B /* Release */,
+				09C60EB718E766BC0079BC8E /* Debug */,
+				09C60EB818E766BC0079BC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 09C451EA18F292F300E4710B /* Project object */;
+	rootObject = 09C60E8818E766BC0079BC8E /* Project object */;
 }
