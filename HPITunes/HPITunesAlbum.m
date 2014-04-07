@@ -17,6 +17,8 @@
 @property (nonatomic, strong) NSString *urlItunes;
 @property (nonatomic, strong) NSDate *dateRelease;
 @property (nonatomic, assign) NSInteger trackCount;
+@property (nonatomic, strong) NSString *price;
+@property (nonatomic, strong) NSString *currency;
 
 @end
 
@@ -48,7 +50,7 @@
     //    releaseDate = "2009-09-11T07:00:00Z";
     //    trackCount = 12;
     //    wrapperType = collection;
-
+    
     album.artistName = dico[@"artistName"];
     album.artistId = dico[@"artistId"];
     album.title = dico[@"collectionName"];
@@ -56,6 +58,8 @@
     album.urlItunes = dico[@"collectionViewUrl"];
     album.dateRelease = dico[@"releaseDate"];
     album.trackCount = [(NSString *)dico[@"trackCount"] integerValue];
+    album.price = dico[@"collectionPrice"];
+    album.currency = dico[@"currency"];
     
     return album;
 }
@@ -68,6 +72,7 @@
     [result appendFormat:@"Artist=%@, %@\n", self.artistId, self.artistName];
     [result appendFormat:@"Artwork=%@\n", self.urlArtwork];
     [result appendFormat:@"iTunes=%@\n", self.urlItunes];
+    [result appendFormat:@"price=%@ %@\n", self.price, self.currency];
     [result appendString:@"------------------------------------\n"];
     
     return result;

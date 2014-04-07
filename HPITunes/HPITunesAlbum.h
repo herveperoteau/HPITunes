@@ -18,6 +18,9 @@
 @property (nonatomic, readonly) NSString *urlItunes;
 @property (nonatomic, readonly) NSDate *dateRelease;
 @property (nonatomic, readonly) NSInteger trackCount;
+@property (nonatomic, readonly) NSString *price;
+@property (nonatomic, readonly) NSString *currency;
+
 
 +(HPITunesAlbum *) createWithDictionary:(NSDictionary *)dico;
 
