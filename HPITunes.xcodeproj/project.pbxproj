@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C451F618F292F300E4710B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F518F292F300E4710B /* Foundation.framework */; };
+		09C451FB18F292F300E4710B /* HPITunes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09C451FA18F292F300E4710B /* HPITunes.h */; };
+		09C451FD18F292F300E4710B /* HPITunes.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C451FC18F292F300E4710B /* HPITunes.m */; };
+		09C4520418F292F300E4710B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C4520318F292F300E4710B /* XCTest.framework */; };
+		09C4520518F292F300E4710B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F518F292F300E4710B /* Foundation.framework */; };
+		09C4520718F292F300E4710B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C4520618F292F300E4710B /* UIKit.framework */; };
+		09C4520A18F292F300E4710B /* libHPITunes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C451F218F292F300E4710B /* libHPITunes.a */; };
+		09C4521018F292F300E4710B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09C4520E18F292F300E4710B /* InfoPlist.strings */; };
+		09C4521218F292F300E4710B /* HPITunesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C4521118F292F300E4710B /* HPITunesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09C4520818F292F300E4710B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C451EA18F292F300E4710B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09C451F118F292F300E4710B;
+			remoteInfo = HPITunes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09C451F018F292F300E4710B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				09C451FB18F292F300E4710B /* HPITunes.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09C451F218F292F300E4710B /* libHPITunes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHPITunes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C451F518F292F300E4710B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09C451F918F292F300E4710B /* HPITunes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPITunes-Prefix.pch"; sourceTree = "<group>"; };
+		09C451FA18F292F300E4710B /* HPITunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPITunes.h; sourceTree = "<group>"; };
+		09C451FC18F292F300E4710B /* HPITunes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunes.m; sourceTree = "<group>"; };
+		09C4520218F292F300E4710B /* HPITunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPITunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09C4520318F292F300E4710B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		09C4520618F292F300E4710B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		09C4520D18F292F300E4710B /* HPITunesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPITunesTests-Info.plist"; sourceTree = "<group>"; };
+		09C4520F18F292F300E4710B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09C4521118F292F300E4710B /* HPITunesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPITunesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09C451EF18F292F300E4710B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C451F618F292F300E4710B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C451FF18F292F300E4710B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C4520418F292F300E4710B /* XCTest.framework in Frameworks */,
+				09C4520718F292F300E4710B /* UIKit.framework in Frameworks */,
+				09C4520518F292F300E4710B /* Foundation.framework in Frameworks */,
+				09C4520A18F292F300E4710B /* libHPITunes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09C451E918F292F300E4710B = {
+			isa = PBXGroup;
+			children = (
+				09C451F718F292F300E4710B /* HPITunes */,
+				09C4520B18F292F300E4710B /* HPITunesTests */,
+				09C451F418F292F300E4710B /* Frameworks */,
+				09C451F318F292F300E4710B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09C451F318F292F300E4710B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09C451F218F292F300E4710B /* libHPITunes.a */,
+				09C4520218F292F300E4710B /* HPITunesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09C451F418F292F300E4710B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C451F518F292F300E4710B /* Foundation.framework */,
+				09C4520318F292F300E4710B /* XCTest.framework */,
+				09C4520618F292F300E4710B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09C451F718F292F300E4710B /* HPITunes */ = {
+			isa = PBXGroup;
+			children = (
+				09C451FA18F292F300E4710B /* HPITunes.h */,
+				09C451FC18F292F300E4710B /* HPITunes.m */,
+				09C451F818F292F300E4710B /* Supporting Files */,
+			);
+			path = HPITunes;
+			sourceTree = "<group>";
+		};
+		09C451F818F292F300E4710B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09C451F918F292F300E4710B /* HPITunes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09C4520B18F292F300E4710B /* HPITunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				09C4521118F292F300E4710B /* HPITunesTests.m */,
+				09C4520C18F292F300E4710B /* Supporting Files */,
+			);
+			path = HPITunesTests;
+			sourceTree = "<group>";
+		};
+		09C4520C18F292F300E4710B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09C4520D18F292F300E4710B /* HPITunesTests-Info.plist */,
+				09C4520E18F292F300E4710B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09C451F118F292F300E4710B /* HPITunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C4521518F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunes" */;
+			buildPhases = (
+				09C451EE18F292F300E4710B /* Sources */,
+				09C451EF18F292F300E4710B /* Frameworks */,
+				09C451F018F292F300E4710B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPITunes;
+			productName = HPITunes;
+			productReference = 09C451F218F292F300E4710B /* libHPITunes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		09C4520118F292F300E4710B /* HPITunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09C4521818F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunesTests" */;
+			buildPhases = (
+				09C451FE18F292F300E4710B /* Sources */,
+				09C451FF18F292F300E4710B /* Frameworks */,
+				09C4520018F292F300E4710B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09C4520918F292F300E4710B /* PBXTargetDependency */,
+			);
+			name = HPITunesTests;
+			productName = HPITunesTests;
+			productReference = 09C4520218F292F300E4710B /* HPITunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09C451EA18F292F300E4710B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Hervé PEROTEAU";
+			};
+			buildConfigurationList = 09C451ED18F292F300E4710B /* Build configuration list for PBXProject "HPITunes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09C451E918F292F300E4710B;
+			productRefGroup = 09C451F318F292F300E4710B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09C451F118F292F300E4710B /* HPITunes */,
+				09C4520118F292F300E4710B /* HPITunesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09C4520018F292F300E4710B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C4521018F292F300E4710B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09C451EE18F292F300E4710B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C451FD18F292F300E4710B /* HPITunes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09C451FE18F292F300E4710B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C4521218F292F300E4710B /* HPITunesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09C4520918F292F300E4710B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09C451F118F292F300E4710B /* HPITunes */;
+			targetProxy = 09C4520818F292F300E4710B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09C4520E18F292F300E4710B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09C4520F18F292F300E4710B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09C4521318F292F300E4710B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09C4521418F292F300E4710B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09C4521618F292F300E4710B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HPITunes.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPITunes/HPITunes-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		09C4521718F292F300E4710B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/HPITunes.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPITunes/HPITunes-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		09C4521918F292F300E4710B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPITunes/HPITunes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HPITunesTests/HPITunesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		09C4521A18F292F300E4710B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPITunes/HPITunes-Prefix.pch";
+				INFOPLIST_FILE = "HPITunesTests/HPITunesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09C451ED18F292F300E4710B /* Build configuration list for PBXProject "HPITunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C4521318F292F300E4710B /* Debug */,
+				09C4521418F292F300E4710B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09C4521518F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C4521618F292F300E4710B /* Debug */,
+				09C4521718F292F300E4710B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09C4521818F292F300E4710B /* Build configuration list for PBXNativeTarget "HPITunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C4521918F292F300E4710B /* Debug */,
+				09C4521A18F292F300E4710B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09C451EA18F292F300E4710B /* Project object */;
+}
