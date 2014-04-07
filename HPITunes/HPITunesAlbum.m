@@ -16,9 +16,12 @@
 @property (nonatomic, strong) NSString *urlArtwork;
 @property (nonatomic, strong) NSString *urlItunes;
 @property (nonatomic, strong) NSDate *dateRelease;
+@property (nonatomic, strong) NSString *dateReleaseString;
 @property (nonatomic, assign) NSInteger trackCount;
-@property (nonatomic, strong) NSString *price;
+@property (nonatomic, strong) NSNumber *price;
 @property (nonatomic, strong) NSString *currency;
+
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 @end
 
@@ -56,13 +59,40 @@
     album.title = dico[@"collectionName"];
     album.urlArtwork = dico[@"artworkUrl100"];
     album.urlItunes = dico[@"collectionViewUrl"];
-    album.dateRelease = dico[@"releaseDate"];
+    album.dateReleaseString = dico[@"releaseDate"];
     album.trackCount = [(NSString *)dico[@"trackCount"] integerValue];
     album.price = dico[@"collectionPrice"];
     album.currency = dico[@"currency"];
     
     return album;
 }
+
+-(NSDate *) dateRelease {
+    
+    if (_dateRelease==nil) {
+        
+        // "2005-12-27T08:00:00Z"
+        if (self.dateReleaseString.length >= 16) {
+            NSString *dateStr = [self.dateReleaseString substringToIndex:16];
+            self.dateRelease = [self.dateFormatter dateFromString:dateStr];
+        }
+    }
+    
+    return _dateRelease;
+}
+
+-(NSDateFormatter *)dateFormatter {
+    
+    if (_dateFormatter == nil) {
+        
+        // "2005-12-27T08:00:00Z"
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        [_dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm"];
+    }
+    
+    return _dateFormatter;
+}
+
 
 -(NSString *) description {
 
