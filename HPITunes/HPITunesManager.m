@@ -74,11 +74,17 @@
     [[ItunesSearch sharedInstance] getIdForArtist:artist
                                    successHandler:^(NSArray *result) {
                                        
-                                       NSDictionary *dico = result[0];
+                                       id artistID = nil;
                                        
-                                       id artistID = dico[@"artistId"];
+                                       if (result.count > 0) {
                                        
-                                       NSLog(@"%@.getArtistID:%@ artistID=%@ (class=%@)", self.class, artist, artistID, [artistID class]);
+                                           NSDictionary *dico = result[0];
+
+                                           artistID = dico[@"artistId"];
+                                           
+                                           NSLog(@"%@.getArtistID:%@ artistID=%@ (class=%@)",
+                                                 self.class, artist, artistID, [artistID class]);
+                                       }
                                        
                                        completion (artistID, nil, nil);
                                        
